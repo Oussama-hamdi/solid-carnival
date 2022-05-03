@@ -160,10 +160,20 @@ header .container .main-nav > li > a:hover::before {
 .landing .container .text {
   flex: 1;
 }
+@media (max-width: 991px) {
+  .landing .container .text {
+    text-align: center;
+  }
+}
 .landing .container .text h1 {
   font-size: 40px;
   letter-spacing: -2px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .landing .container .text h1 {
+    font-size: 28px;
+  }
 }
 .landing .container .text p {
   font-size: 20px;
@@ -172,9 +182,25 @@ header .container .main-nav > li > a:hover::before {
   color: #666;
   max-width: 500px;
 }
+@media (max-width: 767px) {
+  .landing .container .text p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 991px) {
+  .landing .container .text p {
+    margin: 10px auto;
+  }
+}
 .landing .image img {
   width: 600px;
   position: relative;
+  animation: up-and-down 5s infinite linear;
+}
+@media (max-width: 991px) {
+  .landing .image {
+    display: none;
+  }
 }
 .landing .go-down {
   color: var(--main-color);
@@ -187,6 +213,33 @@ header .container .main-nav > li > a:hover::before {
 .landing .go-down:hover {
   color: var(--main-color-alt);
 }
-.landing .go-down {
+.landing .go-down i {
+  animation: bouncing 1.5s infinite;
 }
 /* End Landing */
+
+/* Start Animation */
+@keyframes up-and-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes bouncing {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* End Animation */
