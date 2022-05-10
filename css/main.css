@@ -558,6 +558,52 @@ header .mega-menu .links li a i {
   max-width: 100%;
 }
 /* End Features */
+/* Start Testimonials */
+.testimonials {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.testimonials .container .box {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 7%);
+}
+.testimonials .container .box img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50px;
+  right: -10px;
+  border: 10px solid var(--section-background);
+}
+.testimonials .container .box h3 {
+  margin: 0 0 10px;
+}
+.testimonials .container .box span {
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+.testimonials .container .box .rate .filled {
+  color: #ffc107;
+}
+.testimonials .container .box p {
+  color: #777;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+/* End Testimonials */
 /* Start Animation */
 @keyframes up-and-down {
   0%,
