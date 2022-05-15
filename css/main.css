@@ -784,7 +784,6 @@ header .mega-menu .links li a i {
 }
 /* End Services */
 /* Start Our-skills */
-/* Start Our-skills */
 .our-skills {
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
@@ -829,6 +828,7 @@ header .mega-menu .links li a i {
   transition: var(--main-transition);
   background-color: var(--main-color);
 }
+/* End Our-skills*/
 /* End Animation */
 @keyframes up-and-down {
   0%,
