@@ -1031,6 +1031,143 @@ header .mega-menu .links li a i {
   background-color: var(--main-color-alt);
 }
 /* End Events */
+/* Start Pricing */
+.pricing {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  background-color: var(--section-background);
+}
+.pricing .dots {
+  position: absolute;
+  background-image: url(../images/dots.png);
+  height: 186px;
+  width: 204px;
+  background-repeat: no-repeat;
+}
+.pricing .dots-up {
+  top: 200px;
+  right: 0;
+}
+.pricing .dots-down {
+  left: 0;
+  bottom: 200px;
+}
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.pricing .box img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.pricing .box {
+  position: relative;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  transition: var(--main-transition);
+  background-color: white;
+  text-align: center;
+  z-index: 1;
+}
+.pricing .box::before,
+.pricing .box::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: var(--main-transition);
+  background-color: #f6f6f6;
+  width: 0;
+  height: 50%;
+}
+.pricing .box::before {
+  top: 0;
+  left: 0;
+}
+.pricing .box::after {
+  bottom: 0;
+  right: 0;
+}
+.pricing .box:hover::before,
+.pricing .box:hover::after {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .pricing .box.popular {
+    top: -20px;
+  }
+}
+.pricing .box.popular .label {
+  position: absolute;
+  background-color: var(--main-color);
+  writing-mode: vertical-rl;
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px 35px;
+  right: 20px;
+  width: 40px;
+}
+.pricing .box.popular .label::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 20px;
+  border-color: transparent transparent white;
+}
+.pricing .box .title {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 30px 0;
+  letter-spacing: -1px;
+}
+.pricing .box .price {
+  margin-bottom: 20px;
+}
+.pricing .box .price .amount {
+  font-size: 3rem;
+  color: var(--main-color);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.pricing .box .price .time {
+  color: #777;
+}
+.pricing .box ul {
+  list-style: none;
+  text-align: left;
+}
+.pricing .box ul li {
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+.pricing .box ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  margin-right: 10px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.pricing .box a {
+  font-weight: bold;
+  margin: 30px auto 40px;
+  display: block;
+  width: fit-content;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  transition: var(--main-transition);
+  font-size: 18px;
+}
+.pricing .box a:hover {
+  background-color: var(--main-color);
+  color: white;
+  letter-spacing: 1px;
+}
+/* End Pricing */
 /* End Animation */
 @keyframes up-and-down {
   0%,
