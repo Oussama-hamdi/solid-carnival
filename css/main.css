@@ -1168,6 +1168,66 @@ header .mega-menu .links li a i {
   letter-spacing: 1px;
 }
 /* End Pricing */
+/* Start videos */
+.videos {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  position: relative;
+}
+.videos .holder {
+  display: flex;
+  justify-content: center;
+  background-color: var(--section-background);
+  border: 1px solid #ddd;
+}
+@media (max-width: 991px) {
+  .videos .holder {
+    flex-direction: column;
+  }
+}
+.videos .holder .list {
+  min-width: 300px;
+  background-color: white;
+}
+.videos .holder .list .name {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.videos .holder .list ul li {
+  padding: 20px;
+  border-top: 1px solid var(--section-background);
+  cursor: pointer;
+  transition: var(--main-transition);
+  text-transform: capitalize;
+}
+.videos .holder .list ul li span {
+  display: block;
+  margin-top: 10px;
+  color: #777;
+}
+.videos .holder .preview {
+  padding: 10px;
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.videos .holder .preview .info {
+  background-color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.videos .holder .preview img {
+  max-width: 100%;
+}
+/* End videos */
 /* End Animation */
 @keyframes up-and-down {
   0%,
