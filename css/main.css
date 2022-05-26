@@ -1280,6 +1280,95 @@ header .mega-menu .links li a i {
   font-weight: bold;
 }
 /* End Stats */
+/* Start Discount */
+.discount {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discount .content {
+  flex-basis: 50%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(23 135 224 / 97%);
+  color: white;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .discount .content {
+    flex-basis: 100%;
+  }
+}
+.discount .content h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+  margin: 30px 0;
+}
+.discount .content p {
+  line-height: 1.6;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.discount .form {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .discount .form {
+    flex-basis: 100% !important;
+  }
+}
+.discount .form .contentTwo {
+  text-align: center;
+  padding: 0 20px;
+}
+.discount .form .contentTwo h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+  margin: 30px 0;
+}
+.discount .form .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+  outline: none;
+}
+.discount .form textarea.input {
+  resize: none;
+  height: 203px;
+  width: 293px;
+}
+.discount .form input[type="submit"] {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.discount .form input[type="submit"]:hover {
+  background-color: var(--main-color-alt);
+}
+.discount img {
+  width: 300px;
+  max-width: 300px;
+}
+/* End Discount */
 /* End Animation */
 @keyframes up-and-down {
   0%,
