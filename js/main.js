@@ -47,3 +47,28 @@ let counter = setInterval(() => {
     clearInterval(counter);
   }
 }, 1000);
+
+// Stats Count On Scroll
+
+let nums = document.querySelectorAll(".stats .number");
+let section = document.getElementById("videos");
+let started = false;
+
+window.onscroll = function () {
+  if (window.scrollY >= section.offsetTop) {
+    if (!started) {
+      nums.forEach((num) => startCount(num));
+    }
+    started = true;
+  }
+};
+
+function startCount(element) {
+  let goal = element.dataset.goal;
+  let count = setInterval(() => {
+    element.textContent++;
+    if (element.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 2000 / goal);
+}
